@@ -34,6 +34,7 @@ def main():
 	parser.add_argument("-f", "--feedback", dest="feedback", help="Feedback message")
 	parser.add_argument("-c", "--color", dest="color", help="message color", default=color)
 	parser.add_argument("-u", "--url", dest="url", help="message color", default=URL)
+	
 	args = parser.parse_args()
 
 	URL=args.url
