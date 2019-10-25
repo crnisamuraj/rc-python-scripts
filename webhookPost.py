@@ -37,12 +37,6 @@ def main():
 	
 	args = parser.parse_args()
 
-	URL=args.url
-	scanPath = args.scanPath
-	scanId = args.scanId
-	feedback = args.feedback
-	color = args.color
-
 	message = Message(args.scanPath, args.scanId, args.feedback, args.color)
 
 	r = requests.post(url = URL, data = message.craftMessage())
