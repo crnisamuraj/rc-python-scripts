@@ -9,7 +9,7 @@ class Message:
 		self.feedback = feedback
 		self.color = color
 	
-	def CraftMessage(self):
+	def craftMessage(self):
 		messageBody = {
 			"text":self.scanPath,
 			"attachments":
@@ -45,7 +45,7 @@ def main():
 
 	message = Message(args.scanPath, args.scanId, args.feedback, args.color)
 
-	r = requests.post(url = URL, data = message.CraftMessage())
+	r = requests.post(url = URL, data = message.craftMessage())
 
 if __name__ == "__main__":
 	main()
