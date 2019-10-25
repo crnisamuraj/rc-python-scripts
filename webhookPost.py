@@ -29,9 +29,9 @@ def main():
 	color = "#764FF5"
 
 	parser = argparse.ArgumentParser(description='Script for ez posting to rocket.Chat webhook for QC fails')
-	parser.add_argument("-sp", "--scan-path", dest="scanPath", help="Full path to scan")
-	parser.add_argument("-id", "--scan-id", dest="scanId", help="Scan id")
-	parser.add_argument("-f", "--feedback", dest="feedback", help="Feedback message")
+	parser.add_argument("-sp", "--scan-path", dest="scanPath", help="Full path to scan", default=scanPath)
+	parser.add_argument("-id", "--scan-id", dest="scanId", help="Scan id", default=scanId)
+	parser.add_argument("-f", "--feedback", dest="feedback", help="Feedback message", default=feedback)
 	parser.add_argument("-c", "--color", dest="color", help="message color", default=color)
 	parser.add_argument("-u", "--url", dest="url", help="message color", default=URL)
 	
