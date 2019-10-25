@@ -23,9 +23,9 @@ class Message:
 
 def main():
 	URL = "https://chat.doobinnovation.com/hooks/eZfAC2BgpD6vPLwS8/r9GKi89vNMJiJwh4p5PewfviPkg5pEzThNjWzBxnivJCReds"
-	scanPath = "TestScanPath"
+	scanPath = "Scan Path"
 	scanId = "Scan ID"
-	feedback = "Some feedback goes here. Explain what needs to be fixed etc"
+	feedback = "Message"
 	color = "#764FF5"
 
 	parser = argparse.ArgumentParser(description='Script for ez posting to rocket.Chat webhook for QC fails')
