@@ -21,6 +21,10 @@ class Message:
 		}
 		return json.dumps(messageBody)
 
+def post(URL, scanPath, scanId, feedback, color):
+	message = Message(scanPath, scanId, feedback, color)
+	r = requests.post(url = URL, data = message.craftMessage())
+
 def main():
 	URL = "https://chat.doobinnovation.com/hooks/eZfAC2BgpD6vPLwS8/r9GKi89vNMJiJwh4p5PewfviPkg5pEzThNjWzBxnivJCReds"
 	scanPath = "Scan Path"
